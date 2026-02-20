@@ -1,0 +1,392 @@
+
+* {
+    box-sizing: border-box; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: system-ui, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    padding: 13px 4%; 
+    background-color: rgb(143, 204, 255);
+    min-height: 80px;
+}
+
+
+.logo img {
+    width: 120px;
+    margin-top: -5px;
+    height: auto;
+    transition: filter 0.3s ease;
+    display: block;
+}
+
+.nav-center, .nav-right {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px; 
+}
+
+.nav-center li a, .nav-right li a {
+    text-decoration: none;
+    color: #696969;
+    font-weight: 500;
+    padding: 8px 15px;
+    font-size: 17px;
+    border: 2px solid transparent; 
+    border-radius: 100px;         
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    white-space: nowrap; 
+}
+
+.nav-center li a:hover, .nav-right li a:hover {
+    color: #1c6cff;
+    text-shadow: 0 0 4px #38bdf8;
+    background-color: rgba(58, 58, 58, 0.075); 
+}
+
+.nav-right {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    
+}
+
+.user-icon {
+    display: flex; 
+    align-items: center;
+    position: relative; 
+    cursor: pointer;
+}
+
+.user-icon img {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+
+.user-icon .tooltip {
+    visibility: hidden;
+    background-color: #254574bb;
+    color: #fff;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    position: absolute;
+    top: 110%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    white-space: nowrap;
+    font-size: 14px;
+    z-index: 100;
+}
+
+.user-icon:hover .tooltip {
+    visibility: visible;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px 2%;
+    }
+    .nav-center, .nav-right {
+        gap: 5px;
+    }
+    .nav-center li a {
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .nav-center, .nav-right {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    
+    .logo img {
+        margin: 0 auto; 
+    }
+}
+.main-header {
+    text-align: center;   
+    margin-top: 60px; 
+    padding: 0 20px;       
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    color: #8ed5ff;
+    font-family: system-ui, sans-serif;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.main-image-container {
+    text-align: center;
+    margin-top: 50px;
+    transform: translate(20px, 20px);
+}
+
+.hero-img {
+    max-width: 80%;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.Pena2 {
+  position: absolute;
+  top: 460px;
+  left: 1115px;
+  z-index: 10; 
+}
+
+.Pena2 img{
+  width: 170px;
+}
+
+.Pena {
+  position: absolute;
+  top: 437px;
+  left: 673px;
+  z-index: 10; 
+}
+
+.Pena img{
+  width: 210px;
+}
+
+
+.Voda{
+  position: absolute;
+  top: -100px;
+  left: 104px;
+  z-index: -1;
+  
+}
+
+.Voda img{
+  width: 1600px;
+  
+}
+
+.advantages {
+    text-align: center;
+    margin-top: 110px;
+    margin-left: 30px;
+}
+
+.advantages h2 {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 40px;
+    transform: translate(-10px, -10px);
+}
+
+.advantages-container {
+    display: flex;
+    justify-content: center; 
+    gap: 80px; 
+    margin-top: 50px;
+    align-items: center;
+}
+
+.advantage-item {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;    
+}
+
+.advantage-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.advantage-item p {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    margin: 0;
+    max-width: 150px;
+    line-height: 1.1;
+    text-align: left;
+}
+
+
+.premakni-levo {
+    transform: translateX(-30px);
+}
+
+.premakni-levo p {
+    white-space: nowrap;
+}
+
+
+.Zakaj-mi img {
+     position: absolute;
+     top: 990px;        
+     left: 0;          
+     width: 100%;        
+     max-width: 100%;  
+     height: 1300px;
+     max-height: 100%;
+     filter: blur(3px);
+     object-fit: cover;
+     object-position: center 110%;
+     z-index: -1;
+}
+
+.Operimo img{
+     position: absolute;
+     size: 10px;
+     width: 500px;
+     height: 700px;
+     top: 1095px;
+     left: 100px;
+     border-radius: 15px;
+
+}
+
+.Lokacija img {
+    position: absolute;
+    top: 1095px;
+    left: 695px;
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+    object-fit: cover; 
+}
+
+.Prijazen img{
+     position: absolute;
+     size: 10px;
+     width: 500px;
+     height: 700px;
+     top: 1095px;
+     left: 1295px;
+     border-radius: 15px;
+
+}
+
+.Kaj-se-cakas {
+    position: relative;
+    padding-top: 1100px;
+    text-align: center; 
+    padding-bottom: 200px;
+    font-size: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.Kupi {
+    position: relative;    
+    margin-top: 30px;    
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 10px 20px;  
+    height: 50px;
+    width: 150px; 
+    background-color: #70b5ff;  
+    color: white;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Kupi:hover {
+    background-color: #4a9eff; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+   
+}
+
+.Kupi:active {
+     
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #3588e6;
+}
+
+.vodoravni-footer {
+    background-color: #1a1a1a;
+    color: white;
+    margin-top: -40px;
+    padding: 30px 10px;
+    border-top: 5px solid #70b5ff; 
+    text-align: center;
+}
+
+.footer-vsebina {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;               
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+}
+
+.footer-sekcija {
+    flex: 1;                       
+    min-width: 250px;              
+    margin: 10px 0;
+}
+
+.footer-sekcija strong {
+    color: #70b5ff;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.footer-sekcija p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.copy {
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+
+
+
+           
+
+
+
+
+  
+
+
+
+
+
+
