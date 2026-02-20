@@ -1,0 +1,355 @@
+
+* {
+    box-sizing: border-box; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: system-ui, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    padding: 13px 4%; 
+    background-color: rgb(143, 204, 255);
+    min-height: 80px;
+}
+
+
+.logo img {
+    width: 120px;
+    margin-top: -5px;
+    height: auto;
+    transition: filter 0.3s ease;
+    display: block;
+}
+
+.nav-center, .nav-right {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px; 
+}
+
+.nav-center li a, .nav-right li a {
+    text-decoration: none;
+    color: #696969;
+    font-weight: 500;
+    padding: 8px 15px;
+    font-size: 17px;
+    border: 2px solid transparent; 
+    border-radius: 100px;         
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    white-space: nowrap; 
+}
+
+.nav-center li a:hover, .nav-right li a:hover {
+    color: #1c6cff;
+    text-shadow: 0 0 4px #38bdf8;
+    background-color: rgba(58, 58, 58, 0.075); 
+}
+
+.nav-right {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    
+}
+
+.user-icon {
+    display: flex; 
+    align-items: center;
+    position: relative; 
+    cursor: pointer;
+}
+
+.user-icon img {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+
+.user-icon .tooltip {
+    visibility: hidden;
+    background-color: #254574bb;
+    color: #fff;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    position: absolute;
+    top: 110%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    white-space: nowrap;
+    font-size: 14px;
+    z-index: 100;
+}
+
+.user-icon:hover .tooltip {
+    visibility: visible;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px 2%;
+    }
+    .nav-center, .nav-right {
+        gap: 5px;
+    }
+    .nav-center li a {
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .nav-center, .nav-right {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    
+    .logo img {
+        margin: 0 auto; 
+    }
+}
+
+.Storitve{
+   position: relative;
+   text-align: center;
+   margin-top: 65px;
+}
+.Storitve h1{
+   text-align: center;
+   margin-bottom: 45px;
+   font-size: 55px;
+}
+
+.Storitve h2{
+  text-align: center;
+  font-size: 29px;
+
+}
+.highlight {
+  color: #0270ff;
+  font-weight: bold;
+
+}
+.main-image-container {
+    margin-top: -365px;
+
+}
+
+.hero-img {
+   max-width: 80%;
+   width: 800px;
+   margin-left: 520px;
+   height: auto;
+   border-radius: 10px;
+
+}
+
+.Storitve1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;    
+   gap: 100px;
+}
+
+.Storitve1 img {
+  height: auto;
+  border-radius: 20px;
+}
+
+
+.Storitve2 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 100px;               
+  
+  margin-top: 100px;
+}
+
+
+.Storitve2 img {
+ 
+  height: auto;
+  border-radius: 20px;
+}
+
+
+.Storitve3 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 100px;               
+  
+  margin-top: 99px;
+}
+
+.Storitve3 img {
+ 
+  height: auto;
+  border-radius: 20px;
+}
+
+.Slika {
+    width: 100%;       
+    overflow: hidden; 
+     
+}
+
+.Slika img {
+   position: absolute;
+   
+            
+   width: 1920px;
+   margin-top: 150px;  
+   height: 750px; 
+   filter: blur(5px) brightness(65%); ;
+   object-fit: cover;
+   object-position: center bottom; 
+   z-index: -1; 
+}
+
+
+.Dodatna-vprasanja{
+  position: relative;
+  font-size: 37px;
+  color: rgb(255, 255, 255);
+
+}
+
+.Dodatna-vprasanja h1{
+  margin-left: 680px;
+  margin-top: 270px;
+
+}
+
+.highlight2 {
+  color: #45abff; 
+  font-weight: bold; 
+}
+
+.Dodatna-vprasanja2{
+   font-size: 27px;
+   margin-left: 570px;
+   margin-top: 50px;
+   color: rgb(255, 255, 255);
+   
+}
+
+.Stevilka {
+  position: relative;
+  margin-top: 40px;
+  margin-left: 157px;
+
+}
+
+.Stevilka img{
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+}
+
+
+.Stevilka1 {
+  display: inline-block;
+  position: relative;
+  top: -77px;
+  margin-left: 267px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.Stevilka1:hover {
+  color: #57b3ff; 
+  filter: brightness(1)
+}
+
+
+.vodoravni-footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px 10px;
+    margin-top: 110px;
+    border-top: 5px solid #70b5ff; 
+    text-align: center;
+}
+
+.footer-vsebina {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;               
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+}
+
+.footer-sekcija {
+    flex: 1;                       
+    min-width: 250px;              
+    margin: 10px 0;
+}
+
+.footer-sekcija strong {
+    color: #70b5ff;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.footer-sekcija p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.copy {
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

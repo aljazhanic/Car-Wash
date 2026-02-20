@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakup storitve - Car Wash</title>
+    <link rel="stylesheet" href="standard.css">
+</head>
+<body>
+
+<div class="purchase-container">
+    <h1>Nakup storitve</h1>
+
+    <div class="selected-package">
+        <h2><span id="packageName">Standard paket</span></h2>
+        <p class="package-price">Cena: <span id="packagePrice">32.00€</span></p>
+        <p class="Popust" id="discountText">Če ste že registrirani, kliknite <a href="Standard-popust.html">tukaj</a> za dodatni popust!</p>
+    </div>
+
+    <form>
+        <div class="form-row">
+            <div class="form-group">
+            <label for="ime">Ime</label>
+            <input type="text" id="ime" name="ime" placeholder="Vnesi ime" required>
+            
+        </div>
+
+        <div class="form-group">
+            <label for="priimek">Priimek</label>
+            <input type="text" id="priimek" name="priimek" placeholder="Vnesi priimek" required>
+        </div>
+        </div>
+        <div class="form-row2">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Vnesi email" required>
+        </div>
+      
+        <div class="form-group">
+            <label for="geslo">Geslo</label>
+            <input type="password" id="geslo" name="geslo" placeholder="Vnesi geslo" required>
+        </div>
+        </div>
+        <div class="form-section-title">Podatki o kartici</div>
+
+        <div class="form-group">
+            <label for="cardNumber">Številka kartice</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="expiryDate">Veljavnost (MM/YY)</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+            </div>
+        </div>
+
+        <div class="email">
+           <p1>*Na email , ki ga boste navedeli, vam bomo poslali kodo,</p1>
+           <p1>ki jo boste pokazali v avtopralnici za dokaz nakupa</p1>   
+        </div>
+        
+        <button type="submit" class="purchase-button">Potrdi nakup - 32.00€</button>
+
+        <div id="errorMessage" class="error-message"></div>
+    </form>
+
+    <div class="back-link">
+        <a href="Car_Wash.html">← Nazaj na domačo stran</a>
+    </div>
+</div>
+
+<script src="Standard.js"></script>
+<script src="auth.js"></script>
+
+</body>
+</html>

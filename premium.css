@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(160deg, #4b99ff, #32beff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.purchase-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.selected-package {
+    background: #f3f9ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 2px solid #1c91ff;
+}
+
+.selected-package h2 {
+    color: #1c91ff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.selected-package #packageName {
+    font-weight: bold;
+}
+
+.package-price {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 25px 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-row2 {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row2 .form-group {
+    flex: 1;
+}
+
+
+.email {
+  position: relative;
+  padding-bottom: 12px;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.Popust {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.purchase-button {
+    width: 100%;
+    padding: 15px;
+    background: #2495ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 10px;
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    flex-shrink: 0;
+}
+
+.purchase-button:hover {
+    background: #0059ffe7;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.error-message {
+    display: none;
+    background-color: #fee;
+    color: #c33;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    border: 1px solid #fcc;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,383 @@
+
+* {
+    box-sizing: border-box; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: system-ui, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    padding: 13px 4%; 
+    background-color: rgb(143, 204, 255);
+    min-height: 80px;
+}
+
+
+.logo img {
+    width: 120px;
+    margin-top: -5px;
+    height: auto;
+    transition: filter 0.3s ease;
+    display: block;
+}
+
+.nav-center, .nav-right {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px; 
+}
+
+.nav-center li a, .nav-right li a {
+    text-decoration: none;
+    color: #696969;
+    font-weight: 500;
+    padding: 8px 15px;
+    font-size: 17px;
+    border: 2px solid transparent; 
+    border-radius: 100px;         
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    white-space: nowrap; 
+}
+
+.nav-center li a:hover, .nav-right li a:hover {
+    color: #1c6cff;
+    text-shadow: 0 0 4px #38bdf8;
+    background-color: rgba(58, 58, 58, 0.075); 
+}
+
+.nav-right {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    
+}
+
+.user-icon {
+    display: flex; 
+    align-items: center;
+    position: relative; 
+    cursor: pointer;
+}
+
+.user-icon img {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+
+.user-icon .tooltip {
+    visibility: hidden;
+    background-color: #254574bb;
+    color: #fff;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    position: absolute;
+    top: 110%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    white-space: nowrap;
+    font-size: 14px;
+    z-index: 100;
+}
+
+.user-icon:hover .tooltip {
+    visibility: visible;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px 2%;
+    }
+    .nav-center, .nav-right {
+        gap: 5px;
+    }
+    .nav-center li a {
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .nav-center, .nav-right {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    
+    .logo img {
+        margin: 0 auto; 
+    }
+}
+
+.Lokacija h1{
+    position: relative;
+    margin-top: 72px;
+    margin-left: 505px;
+    font-size: 40px;
+
+}
+
+.highlight {
+   color: #339dff; 
+   font-weight: bold; 
+}
+
+.Map{
+   margin-top: 70px;
+   margin-left: 480px;
+   width: 100px;
+   height: 100px;
+   object-fit: cover
+}
+
+.Pointer{
+    position: absolute;
+    top: 70%;
+    left: 43.2%;
+    transform: translate(-50%, -50%);
+}
+
+.Pointer img{
+   width: 54px;
+   height: 77%;
+   object-fit: cover;
+   transition: filter 0.3s ease;
+
+}
+
+.Pointer img:hover {
+  filter: brightness(0.7) contrast(1.1);
+  transform: scale(1.06);
+}
+
+.Pointer2{
+    position: absolute;
+    top: 63%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+   
+}
+
+.Pointer2 img{
+   width: 54px;
+   height: 77px;
+   object-fit: cover;
+   transition: filter 0.3s ease;
+  
+}
+
+.Pointer2 img:hover {
+  filter: brightness(0.7) contrast(1.1);
+  transform: scale(1.06);
+
+}
+
+.Pointer3{
+    position: absolute;
+    top: 56%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+   
+}
+
+.Pointer3 img{
+   width: 54px;
+   height: 77px;
+   object-fit: cover;
+   transition: filter 0.3s ease;
+}
+
+.Pointer3 img:hover {
+  filter: brightness(0.7) contrast(1.1);
+  transform: scale(1.06);
+}
+
+.Celje {
+  display: flex;
+  align-items: center; 
+  margin-top: 690px;
+  padding: 10px;
+
+}
+
+.Celje img{
+   width: 470px;      
+   height: auto;      
+   object-fit: cover; 
+   border-radius: 10px;
+   
+
+   transition: filter 0.7s ease;
+   
+}
+
+
+.Celji:hover{
+    filter: brightness(0.7);
+   
+}
+
+.Velenje:hover{
+    filter: brightness(0.7);
+    
+}
+
+.Ljubljana:hover{
+    filter: brightness(0.7);
+    
+}
+
+.Ljubljana {
+  margin-right: auto; 
+  transform: translateX(100px);
+}
+
+.Velenje {
+  margin-left: auto;
+  transform: translateX(-100px);
+}
+
+
+.Celje-kontakt {
+  display: flex;
+  align-items: center; 
+  padding: 10px;
+}
+
+.Celje-kontakt img{
+   width: 490px;      
+   height: auto;      
+   object-fit: cover; 
+   margin-top: 50px;
+   border-radius: 30px;
+}
+
+.Ljubljana-kontakt {
+  margin-right: auto; 
+  transform: translateX(90px);
+}
+
+.Ljubljana-kontakt {
+ 
+  transition: box-shadow 0.1s ease, border 0.1s ease;
+  pointer-events: auto;
+}
+
+
+#Ljubljana2.aktivno .Ljubljana-kontakt {
+  border: 4px solid #1e6bff;
+  box-shadow: 0 0 120px rgba(49, 162, 255, 0.8);
+  border-radius: 30px;
+}
+
+#Ljubljana2 {
+  scroll-margin-top: 120px; 
+}
+
+
+.Cele-kontakt {
+  transform: translateX(206px);
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+
+#Cele.aktivno .Cele-kontakt {
+  border: 4px solid #1e6bff;
+  box-shadow: 0 0 120px rgba(49, 162, 255, 0.8);
+  border-radius: 30px;
+}
+
+#Cele2 {
+  scroll-margin-top: 120px; 
+}
+
+.Velenje-kontakt {
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+
+#Velenje2.aktivno .Velenje-kontakt {
+  border: 4px solid #1e6bff;
+  box-shadow: 0 0 120px rgba(49, 162, 255, 0.8);
+  border-radius: 30px;
+}
+
+#Velenje2 {
+  scroll-margin-top: 120px; 
+}
+
+.Velenje-kontakt {
+  margin-left: auto;
+  transform: translateX(327px);
+}
+
+.vodoravni-footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px 10px;
+    margin-top: 120px;
+    border-top: 5px solid #70b5ff; 
+    text-align: center;
+}
+
+.footer-vsebina {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;               
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+}
+
+.footer-sekcija {
+    flex: 1;                       
+    min-width: 250px;              
+    margin: 10px 0;
+}
+
+.footer-sekcija strong {
+    color: #70b5ff;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.footer-sekcija p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.copy {
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+
+
+
+

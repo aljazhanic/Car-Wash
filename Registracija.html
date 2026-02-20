@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naslov Strani</title>
+    
+    <link rel="stylesheet" href="Registracija.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+        <h1>Registracija</h1>
+
+        <div class="Živijo">
+            <p class="title">Dobrodošli!</p>
+            <p class="subtitle">Izpolnite spodnji obrazec za registracijo.</p>
+        </div>
+
+        <form class="form-grid">
+            <div class="form-group2">
+                <label for="ime">Ime</label>
+                <input type="text" id="ime" name="ime" placeholder="Vnesi ime">
+            </div>
+
+            <div class="form-group2">
+                <label for="priimek">Priimek</label>
+                <input type="text" id="priimek" name="priimek" placeholder="Vnesi priimek">
+            </div>
+
+            <div class="form-group2">
+                <label for="kraj">Kraj bivanja</label>
+                <input type="text" id="kraj" name="kraj" placeholder="Vnesi kraj bivanja">
+            </div>
+
+            <div class="form-group2">
+                <label for="posta">Poštna številka</label>
+                <input type="text" id="posta" name="posta" placeholder="Vnesi poštno številko">
+            </div>
+
+            <div class="form-group2">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Vnesi email">
+            </div>
+
+            <div class="form-group2">
+                <label for="username">Uporabniško ime</label>
+                <input type="text" id="username" name="username" placeholder="Vnesi uporabniško ime">
+            </div>
+
+            <div class="form-group2">
+                <label for="geslo">Geslo</label>
+                <input type="password" id="geslo" name="geslo" placeholder="Vnesi geslo">
+            </div>
+
+            <div class="form-group2">
+                <label for="potrditevGesla">Potrditev gesla</label>
+                <input type="password" id="potrditevGesla" name="potrditevGesla" placeholder="Potrdi geslo">
+            </div>
+
+            <button type="submit" class="register-button">Registracija</button>
+
+            <div id="errorMessage" class="error-message"></div>
+
+        </form>
+
+        <div class="Registrirani2">
+            <p class="Vprasanje2">
+                Ste že registrirani?
+                <a href="Prijava.html" class="Registracija-link">Prijava</a>
+            </p>
+        </div>
+
+    </div>
+<script src="Registracija.js"></script>
+</body>
+</html>
